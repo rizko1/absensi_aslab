@@ -88,7 +88,7 @@
               No
             </th>
             <th scope="col" class="{{ $thClass }}">
-              NIP
+              NIM
             </th>
             <th scope="col" class="{{ $thClass }}">
               Name

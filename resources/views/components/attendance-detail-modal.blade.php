@@ -7,7 +7,7 @@
       @endphp
       <h3 class="mb-3 text-xl font-semibold dark:text-white">{{ $currentAttendance['name'] }}</h3>
       <div class="mb-3 w-full">
-        <x-label for="nip" value="{{ __('NIP') }}"></x-label>
+        <x-label for="nip" value="{{ __('NIM') }}"></x-label>
         <x-input type="text" class="w-full" id="nip" disabled value="{{ $currentAttendance['nip'] }}"></x-input>
       </div>
       <div class="mb-3 flex w-full gap-3">

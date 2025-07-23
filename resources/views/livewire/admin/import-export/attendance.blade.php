@@ -100,7 +100,7 @@
             </th>
             <th class="{{ $thClass }}">Date</th>
             <th class="{{ $thClass }}">Name</th>
-            <th class="{{ $thClass }}">NIP</th>
+            <th class="{{ $thClass }}">NIM</th>
             <th class="{{ $thClass }} text-nowrap">Time In</th>
             <th class="{{ $thClass }} text-nowrap">Time Out</th>
             <th class="{{ $thClass }}">Shift</th>

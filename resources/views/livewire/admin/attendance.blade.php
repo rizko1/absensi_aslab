@@ -69,7 +69,7 @@
           </th>
           @if ($showUserDetail)
             <th scope="col" class="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300">
-              {{ __('NIP') }}
+              {{ __('NIM') }}
             </th>
             <th scope="col" class="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300">
               {{ __('Division') }}

@@ -16,7 +16,7 @@
       </div>
 
       <div class="mt-4">
-        <x-label for="nip" value="{{ __('NIP') }}" />
+        <x-label for="nip" value="{{ __('NIM') }}" />
         <x-input id="nip" class="mt-1 block w-full" type="text" name="nip" :value="old('nip')"
           autocomplete="nip" />
       </div>

@@ -62,7 +62,7 @@
             {{ __('Name') }}
           </th>
           <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300">
-            {{ __('NIP') }}
+            {{ __('NIM') }}
           </th>
           <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300">
             {{ __('Email') }}
@@ -215,7 +215,7 @@
             @enderror
           </div>
           <div class="w-full">
-            <x-label for="nip">NIP</x-label>
+            <x-label for="nip">NIM</x-label>
             <x-input id="nip" class="mt-1 block w-full" type="text" wire:model="form.nip"
               placeholder="12345678" required />
             @error('form.nip')
@@ -418,7 +418,7 @@
             @enderror
           </div>
           <div class="w-full">
-            <x-label for="nip">NIP</x-label>
+            <x-label for="nip">NIM</x-label>
             <x-input id="nip" class="mt-1 block w-full" type="text" wire:model="form.nip"
               placeholder="12345678" required />
             @error('form.nip')
@@ -572,7 +572,7 @@
 
         <div class="mt-4 text-sm text-gray-600 dark:text-gray-400">
           <div class="mt-4">
-            <x-label for="nip" value="NIP" />
+            <x-label for="nip" value="NIM" />
             <p>{{ $form->user->nip }}</p>
           </div>
           <div class="mt-4">
