@@ -1,10 +1,10 @@
 <div>
   <div class="mb-4 flex-col items-center gap-5 sm:flex-row md:flex md:justify-between lg:mr-4">
     <h3 class="mb-4 text-lg font-semibold leading-tight text-gray-800 dark:text-gray-200 md:mb-0">
-      Data Divisi
+      Data aslab/mahasiswa
     </h3>
     <x-button wire:click="showCreating">
-      <x-heroicon-o-plus class="mr-2 h-4 w-4" /> Tambah Divisi
+      <x-heroicon-o-plus class="mr-2 h-4 w-4" /> Tambah aslab/mahasiswa
     </x-button>
   </div>
   <table class="w-full divide-y divide-gray-200 dark:divide-gray-700">
@@ -59,12 +59,12 @@
 
   <x-dialog-modal wire:model="creating">
     <x-slot name="title">
-      Divisi Baru
+      aslab/mahasiswa baru
     </x-slot>
 
     <form wire:submit="create">
       <x-slot name="content">
-        <x-label for="name">Nama Divisi</x-label>
+        <x-label for="name">Nama aslab</x-label>
         <x-input id="name" class="mt-1 block w-full" type="text" wire:model="name" />
         @error('name')
           <x-input-error for="name" class="mt-2" message="{{ $message }}" />
@@ -85,12 +85,12 @@
 
   <x-dialog-modal wire:model="editing">
     <x-slot name="title">
-      Edit Divisi
+      Edit aslab
     </x-slot>
 
     <form wire:submit.prevent="update">
       <x-slot name="content">
-        <x-label for="name">Nama Divisi</x-label>
+        <x-label for="name">Nama aslab</x-label>
         <x-input id="name" class="mt-1 block w-full" type="text" wire:model="name" />
         @error('name')
           <x-input-error for="name" class="mt-2" message="{{ $message }}" />
