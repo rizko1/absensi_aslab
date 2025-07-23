@@ -1,4 +1,4 @@
-# Aplikasi Web Absensi Karyawan QR Code GPS
+# Aplikasi Web Absensi mahasiswaQR Code GPS
 
 ![Aplikasi Web Absensi Karyawan QR Code GPS](./screenshots/hero.png)
 
