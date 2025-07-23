@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('address'); // alamat tempat tinggal
             $table->string('city'); // kota
 
-            // pendidikan terakhir
+            // pilih semester
             $table->foreignId('education_id')->nullable()->constrained('educations');
             // divisi
             $table->foreignId('division_id')->nullable()->constrained('divisions');

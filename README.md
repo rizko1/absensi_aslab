@@ -1,6 +1,6 @@
 # Aplikasi Web Absensi Karyawan QR Code GPS
 
-![Aplikasi Web Absensi Karyawan QR Code GPS](./screenshots/hero.png)
+![Aplikasi Web Absensi aslab QR Code GPS](./screenshots/hero.png)
 
 Aplikasi web absensi karyawan menggunakan QR Code dan GPS.
 
@@ -67,7 +67,7 @@ Pilih salah satu opsi berikut:
 | Absensi per hari | Absensi per minggu | Absensi per bulan |
 |![Absensi per hari](./screenshots/absensi-hari.png)|![Absensi per minggu](./screenshots/absensi-minggu.png)|![Absensi per bulan](./screenshots/absensi-bulan.png)|
 
-| Data mahasiswa | Create/Edit Data Karyawan |
+| Data mahasiswa | Create/Edit Data mahasiswa |
 |---|---|
 |![Data Karyawan](./screenshots/karyawan.jpeg)|![Create Edit Data Karyawan](./screenshots/create-edit-karyawan.png)|
 
