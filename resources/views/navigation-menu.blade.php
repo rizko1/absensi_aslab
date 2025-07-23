@@ -187,7 +187,7 @@
           {{ __('Admin Management') }}
         </x-responsive-nav-link>
         <x-responsive-nav-link href="{{ route('admin.import-export.users') }}" :active="request()->routeIs('admin.import-export')">
-          Import & Export Karyawan/Admin
+          Import & Export /Admin
         </x-responsive-nav-link>
         <x-responsive-nav-link href="{{ route('admin.import-export.attendances') }}" :active="request()->routeIs('admin.import-export')">
           Import & Export Absensi
