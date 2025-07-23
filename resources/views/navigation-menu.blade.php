@@ -27,7 +27,7 @@
             </x-nav-link>
             <x-nav-dropdown :active="request()->routeIs('admin.masters.*')" triggerClasses="text-nowrap">
               <x-slot name="trigger">
-                {{ __('Master Data') }}
+                {{ __('data mahasiswa') }}
                 <x-heroicon-o-chevron-down class="ms-2 h-5 w-5 text-gray-400" />
               </x-slot>
               <x-slot name="content">

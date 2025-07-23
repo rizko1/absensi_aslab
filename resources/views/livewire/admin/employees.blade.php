@@ -4,7 +4,7 @@
       Data Karyawan
     </h3>
     <x-button wire:click="showCreating">
-      <x-heroicon-o-plus class="mr-2 h-4 w-4" /> Tambah Karyawan
+      <x-heroicon-o-plus class="mr-2 h-4 w-4" /> Tambah mahasiswa
     </x-button>
   </div>
   <div class="mb-1 text-sm dark:text-white">Filter:</div>
@@ -132,7 +132,7 @@
 
   <x-confirmation-modal wire:model="confirmingDeletion">
     <x-slot name="title">
-      Hapus Karyawan
+      Hapus mahasiswa
     </x-slot>
 
     <x-slot name="content">
