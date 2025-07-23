@@ -112,7 +112,7 @@
             }
           @endphp
           <tr wire:key="{{ $employee->id }}" class="group">
-            {{-- Detail karyawan --}}
+            {{-- Detail mahasiswa --}}
             <td class="{{ $class }} text-nowrap group-hover:bg-gray-100 dark:group-hover:bg-gray-700">
               {{ $employee->name }}
             </td>
