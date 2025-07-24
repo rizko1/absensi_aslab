@@ -140,7 +140,7 @@
           </td>
           @if ($showUserDetail)
             <td>
-              {{ $employee->nip }}
+              {{ $employee->nim }}
             </td>
             <td>
               {{ $employee->division?->name ?? '-' }}

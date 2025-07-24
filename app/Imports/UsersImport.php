@@ -35,7 +35,7 @@ class UsersImport implements ToModel, WithHeadingRow, WithValidation, SkipsOnFai
             ?? Education::create(['name' => $row['education']])?->id;
         $user = (new User)->forceFill([
             'id' => isset($row['id']) ? $row['id'] : null,
-            'nip' => $row['nip'],
+            'nim' => $row['nim'],
             'name' => $row['name'],
             'email' => $row['email'],
             'phone' => $row['phone'],
@@ -61,7 +61,7 @@ class UsersImport implements ToModel, WithHeadingRow, WithValidation, SkipsOnFai
     public function rules(): array
     {
         return [
-            'nip' => ['required', 'string', Rule::unique('users', 'nip')],
+            'nim' => ['required', 'string', Rule::unique('users', 'nim')],
             'name' => ['required', 'string'],
             'email' => ['required', 'string', Rule::unique('users', 'email')],
             'gender' => ['required', 'string'],

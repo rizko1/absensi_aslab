@@ -132,7 +132,7 @@
                 {{ $loop->iteration }}
               </td>
               <td class="{{ $tdClass }}">
-                {{ $user->nip }}
+                {{ $user->nim }}
               </td>
               <td class="{{ $tdClass }}">
                 {{ $user->name }}

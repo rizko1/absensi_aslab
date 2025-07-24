@@ -142,7 +142,7 @@
             </td>
             @if ($showUserDetail)
               <td class="{{ $class }} group-hover:bg-gray-100 dark:group-hover:bg-gray-700">
-                {{ $employee->nip }}
+                {{ $employee->nim }}
               </td>
               <td class="{{ $class }} text-nowrap group-hover:bg-gray-100 dark:group-hover:bg-gray-700">
                 {{ $employee->division?->name ?? '-' }}

@@ -98,7 +98,7 @@
             </td>
             <td class="{{ $class }} px-6 py-4 text-sm font-medium text-gray-900 dark:text-white"
               {{ $wireClick }}>
-              {{ $user->nip }}
+              {{ $user->nim }}
             </td>
             <td class="{{ $class }} px-6 py-4 text-sm font-medium text-gray-900 dark:text-white"
               {{ $wireClick }}>
