@@ -100,7 +100,7 @@
             </th>
             <th class="{{ $thClass }}">Date</th>
             <th class="{{ $thClass }}">Name</th>
-            <th class="{{ $thClass }}">NIM</th>
+            <th class="{{ $thClass }}">NIP</th>
             <th class="{{ $thClass }} text-nowrap">Time In</th>
             <th class="{{ $thClass }} text-nowrap">Time Out</th>
             <th class="{{ $thClass }}">Shift</th>
@@ -119,7 +119,7 @@
               </td>
               <td class="{{ $tdClass }} text-nowrap">{{ $attendance->date?->format('Y-m-d') }}</td>
               <td class="{{ $tdClass }}">{{ $attendance->user?->name }}</td>
-              <td class="{{ $tdClass }}">{{ $attendance->user?->nim }}</td>
+              <td class="{{ $tdClass }}">{{ $attendance->user?->nip }}</td>
               <td class="{{ $tdClass }}">{{ $attendance->time_in?->format('H:i:s') }}</td>
               <td class="{{ $tdClass }}">{{ $attendance->time_out?->format('H:i:s') }}</td>
               <td class="{{ $tdClass }} text-nowrap">{{ $attendance->shift?->name }}</td>

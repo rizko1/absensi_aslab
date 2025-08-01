@@ -11,7 +11,7 @@
       Absensi Hari Ini
     </h3>
     <h3 class="mb-4 text-lg font-semibold leading-tight text-gray-800 dark:text-gray-200">
-      Jumlah aslab: {{ $employeesCount }}
+      Jumlah Karyawan: {{ $employeesCount }}
     </h3>
   </div>
   <div class="mb-4 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4">
@@ -41,7 +41,7 @@
             {{ __('Name') }}
           </th>
           <th scope="col" class="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300">
-            {{ __('NIM') }}
+            {{ __('NIP') }}
           </th>
           <th scope="col" class="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300">
             {{ __('Division') }}
@@ -112,12 +112,12 @@
             }
           @endphp
           <tr wire:key="{{ $employee->id }}" class="group">
-            {{-- Detail mahasiswa --}}
+            {{-- Detail karyawan --}}
             <td class="{{ $class }} text-nowrap group-hover:bg-gray-100 dark:group-hover:bg-gray-700">
               {{ $employee->name }}
             </td>
             <td class="{{ $class }} group-hover:bg-gray-100 dark:group-hover:bg-gray-700">
-              {{ $employee->nim }}
+              {{ $employee->nip }}
             </td>
             <td class="{{ $class }} text-nowrap group-hover:bg-gray-100 dark:group-hover:bg-gray-700">
               {{ $employee->division?->name ?? '-' }}

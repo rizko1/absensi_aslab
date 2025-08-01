@@ -4,7 +4,7 @@
       <th>#</th>
       <th>Date</th>
       <th>Name</th>
-      <th>NIM</th>
+      <th>NIP</th>
       <th>Time In</th>
       <th>Time Out</th>
       <th>Shift</th>
@@ -27,7 +27,7 @@
         <td>{{ $loop->iteration }}</td>
         <td>{{ $attendance->date?->format('Y-m-d') }}</td>
         <td>{{ $attendance->user?->name }}</td>
-        <td data-type="s">{{ $attendance->user?->nim}}</td>
+        <td data-type="s">{{ $attendance->user?->nip }}</td>
         <td>{{ $attendance->time_in?->format('H:i:s') }}</td>
         <td>{{ $attendance->time_out?->format('H:i:s') }}</td>
         <td>{{ $attendance->shift?->name }}</td>

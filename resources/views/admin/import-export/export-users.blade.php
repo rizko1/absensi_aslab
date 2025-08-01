@@ -2,7 +2,7 @@
   <thead>
     <tr>
       <th>#</th>
-      <th>NIM</th>
+      <th>NIP</th>
       <th>Name</th>
       <th>Email</th>
       <th>Phone</th>
@@ -24,7 +24,7 @@
     @foreach ($users as $user)
       <tr>
         <td>{{ $loop->iteration }}</td>
-        <td data-type="s">{{ $user->nim }}</td>
+        <td data-type="s">{{ $user->nip }}</td>
         <td>{{ $user->name }}</td>
         <td>{{ $user->email }}</td>
         <td data-type="s">{{ $user->phone }}</td>

@@ -91,7 +91,7 @@
         </th>
         @if ($showUserDetail)
           <th scope="col">
-            {{ __('NIM') }}
+            {{ __('NIP') }}
           </th>
           <th scope="col">
             {{ __('Division') }}
@@ -140,7 +140,7 @@
           </td>
           @if ($showUserDetail)
             <td>
-              {{ $employee->nim }}
+              {{ $employee->nip }}
             </td>
             <td>
               {{ $employee->division?->name ?? '-' }}

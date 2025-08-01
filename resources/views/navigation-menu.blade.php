@@ -27,7 +27,7 @@
             </x-nav-link>
             <x-nav-dropdown :active="request()->routeIs('admin.masters.*')" triggerClasses="text-nowrap">
               <x-slot name="trigger">
-                {{ __('data mahasiswa') }}
+                {{ __('Master Data') }}
                 <x-heroicon-o-chevron-down class="ms-2 h-5 w-5 text-gray-400" />
               </x-slot>
               <x-slot name="content">
@@ -187,7 +187,7 @@
           {{ __('Admin Management') }}
         </x-responsive-nav-link>
         <x-responsive-nav-link href="{{ route('admin.import-export.users') }}" :active="request()->routeIs('admin.import-export')">
-          Import & Export /Admin
+          Import & Export Karyawan/Admin
         </x-responsive-nav-link>
         <x-responsive-nav-link href="{{ route('admin.import-export.attendances') }}" :active="request()->routeIs('admin.import-export')">
           Import & Export Absensi

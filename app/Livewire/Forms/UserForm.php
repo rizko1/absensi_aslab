@@ -13,7 +13,7 @@ class UserForm extends Form
     public ?User $user = null;
 
     public $name = '';
-    public $nim = '';
+    public $nip = '';
     public $email = '';
     public $phone = '';
     public $password = null;
@@ -38,7 +38,7 @@ class UserForm extends Form
                 'max:255',
                 Rule::unique('users')->ignore($this->user)
             ],
-            'nim' => [$requiredOrNullable, 'string', 'max:255'],
+            'nip' => [$requiredOrNullable, 'string', 'max:255'],
             'email' => [
                 'required',
                 'email',
@@ -64,7 +64,7 @@ class UserForm extends Form
     {
         $this->user = $user;
         $this->name = $user->name;
-        $this->nim = $user->nim;
+        $this->nip = $user->nip;
         $this->email = $user->email;
         $this->phone = $user->phone;
         if ($this->isAllowed()) {

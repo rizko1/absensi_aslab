@@ -64,9 +64,9 @@
       <x-input-error for="name" class="mt-2" />
     </div>
 
-    <!-- NIM -->
+    <!-- NIP -->
     <div class="col-span-6 sm:col-span-4">
-      <x-label for="nip" value="{{ __('NIM') }}" />
+      <x-label for="nip" value="{{ __('NIP') }}" />
       <x-input id="nip" type="text" class="mt-1 block w-full" wire:model="state.nip" required
         autocomplete="nip" />
       <x-input-error for="nip" class="mt-2" />

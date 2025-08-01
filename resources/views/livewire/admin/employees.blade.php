@@ -1,10 +1,10 @@
 <div>
   <div class="mb-4 flex-col items-center gap-5 sm:flex-row md:flex md:justify-between lg:mr-4">
     <h3 class="mb-4 text-lg font-semibold leading-tight text-gray-800 dark:text-gray-200 md:mb-0">
-      Data mahasiswa
+      Data Karyawan
     </h3>
     <x-button wire:click="showCreating">
-      <x-heroicon-o-plus class="mr-2 h-4 w-4" /> Tambah mahasiswa
+      <x-heroicon-o-plus class="mr-2 h-4 w-4" /> Tambah Karyawan
     </x-button>
   </div>
   <div class="mb-1 text-sm dark:text-white">Filter:</div>
@@ -62,7 +62,7 @@
             {{ __('Name') }}
           </th>
           <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300">
-            {{ __('NIM') }}
+            {{ __('NIP') }}
           </th>
           <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300">
             {{ __('Email') }}
@@ -98,7 +98,7 @@
             </td>
             <td class="{{ $class }} px-6 py-4 text-sm font-medium text-gray-900 dark:text-white"
               {{ $wireClick }}>
-              {{ $user->nim }}
+              {{ $user->nip }}
             </td>
             <td class="{{ $class }} px-6 py-4 text-sm font-medium text-gray-900 dark:text-white"
               {{ $wireClick }}>
@@ -132,7 +132,7 @@
 
   <x-confirmation-modal wire:model="confirmingDeletion">
     <x-slot name="title">
-      Hapus mahasiswa
+      Hapus Karyawan
     </x-slot>
 
     <x-slot name="content">
@@ -199,7 +199,7 @@
           </div>
         @endif
         <div class="mt-4">
-          <x-label for="name">Nama aslab</x-label>
+          <x-label for="name">Nama Karyawan</x-label>
           <x-input id="name" class="mt-1 block w-full" type="text" wire:model="form.name" />
           @error('form.name')
             <x-input-error for="form.name" class="mt-2" message="{{ $message }}" />
@@ -215,7 +215,7 @@
             @enderror
           </div>
           <div class="w-full">
-            <x-label for="nip">NIM</x-label>
+            <x-label for="nip">NIP</x-label>
             <x-input id="nip" class="mt-1 block w-full" type="text" wire:model="form.nip"
               placeholder="12345678" required />
             @error('form.nip')
@@ -402,7 +402,7 @@
           </div>
         @endif
         <div class="mt-4">
-          <x-label for="name">Nama mahasiswa</x-label>
+          <x-label for="name">Nama Karyawan</x-label>
           <x-input id="name" class="mt-1 block w-full" type="text" wire:model="form.name" />
           @error('form.name')
             <x-input-error for="form.name" class="mt-2" message="{{ $message }}" />
@@ -418,7 +418,7 @@
             @enderror
           </div>
           <div class="w-full">
-            <x-label for="nip">NIM</x-label>
+            <x-label for="nip">NIP</x-label>
             <x-input id="nip" class="mt-1 block w-full" type="text" wire:model="form.nip"
               placeholder="12345678" required />
             @error('form.nip')
@@ -572,7 +572,7 @@
 
         <div class="mt-4 text-sm text-gray-600 dark:text-gray-400">
           <div class="mt-4">
-            <x-label for="nip" value="NIM" />
+            <x-label for="nip" value="NIP" />
             <p>{{ $form->user->nip }}</p>
           </div>
           <div class="mt-4">

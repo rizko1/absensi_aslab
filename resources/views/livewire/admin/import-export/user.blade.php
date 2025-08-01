@@ -3,7 +3,7 @@
     @if ($mode != 'import')
       <div>
         <h3 class="mb-4 text-lg font-semibold leading-tight text-gray-800 dark:text-gray-200">
-          Ekspor Data aslab/Admin
+          Ekspor Data Karyawan/Admin
         </h3>
         <form wire:submit.prevent="export">
           <div>
@@ -45,7 +45,7 @@
     @if ($mode != 'export')
       <div>
         <h3 class="mb-4 text-lg font-semibold leading-tight text-gray-800 dark:text-gray-200">
-          Impor Data aslab/Admin
+          Impor Data Karyawan/Admin
         </h3>
         <form x-data="{ file: null }" method="post" wire:submit.prevent="import" enctype="multipart/form-data">
           @csrf
@@ -88,7 +88,7 @@
               No
             </th>
             <th scope="col" class="{{ $thClass }}">
-              NIM
+              NIP
             </th>
             <th scope="col" class="{{ $thClass }}">
               Name
@@ -132,7 +132,7 @@
                 {{ $loop->iteration }}
               </td>
               <td class="{{ $tdClass }}">
-                {{ $user->nim }}
+                {{ $user->nip }}
               </td>
               <td class="{{ $tdClass }}">
                 {{ $user->name }}

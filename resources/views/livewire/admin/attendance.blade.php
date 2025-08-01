@@ -69,7 +69,7 @@
           </th>
           @if ($showUserDetail)
             <th scope="col" class="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300">
-              {{ __('NIM') }}
+              {{ __('NIP') }}
             </th>
             <th scope="col" class="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300">
               {{ __('Division') }}
@@ -136,13 +136,13 @@
             $attendances = $employee->attendances;
           @endphp
           <tr wire:key="{{ $employee->id }}" class="group">
-            {{-- Detail mahasiswa --}}
+            {{-- Detail karyawan --}}
             <td class="{{ $class }} text-nowrap group-hover:bg-gray-100 dark:group-hover:bg-gray-700">
               {{ $employee->name }}
             </td>
             @if ($showUserDetail)
               <td class="{{ $class }} group-hover:bg-gray-100 dark:group-hover:bg-gray-700">
-                {{ $employee->nim }}
+                {{ $employee->nip }}
               </td>
               <td class="{{ $class }} text-nowrap group-hover:bg-gray-100 dark:group-hover:bg-gray-700">
                 {{ $employee->division?->name ?? '-' }}

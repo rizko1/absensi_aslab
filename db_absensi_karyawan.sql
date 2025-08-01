@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `absensi_aslab`
+-- Database: `db_absensi_karyawan`
 --
 
 -- --------------------------------------------------------
@@ -341,7 +341,7 @@ INSERT INTO `shifts` (`id`, `name`, `start_time`, `end_time`, `created_at`, `upd
 
 CREATE TABLE `users` (
   `id` char(26) NOT NULL,
-  `nim` varchar(255) DEFAULT NULL,
+  `nip` varchar(255) DEFAULT NULL,
   `name` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `phone` varchar(255) NOT NULL,
@@ -370,7 +370,7 @@ CREATE TABLE `users` (
 -- Dumping data untuk tabel `users`
 --
 
-INSERT INTO `users` (`id`, `nim`, `name`, `email`, `phone`, `gender`, `birth_date`, `birth_place`, `address`, `city`, `education_id`, `division_id`, `job_title_id`, `password`, `two_factor_secret`, `two_factor_recovery_codes`, `two_factor_confirmed_at`, `raw_password`, `group`, `email_verified_at`, `profile_photo_path`, `remember_token`, `created_at`, `updated_at`) VALUES
+INSERT INTO `users` (`id`, `nip`, `name`, `email`, `phone`, `gender`, `birth_date`, `birth_place`, `address`, `city`, `education_id`, `division_id`, `job_title_id`, `password`, `two_factor_secret`, `two_factor_recovery_codes`, `two_factor_confirmed_at`, `raw_password`, `group`, `email_verified_at`, `profile_photo_path`, `remember_token`, `created_at`, `updated_at`) VALUES
 ('01jc4hszxx1spywkarsjqnf6dw', '0000000000000000', 'Super Admin', 'superadmin@example.com', '00000000000', 'male', NULL, NULL, '', '', NULL, NULL, NULL, '$2y$12$D2kQ2vkKR3qGaL5apm2zsu9aOR4Laje4XDidnHEZNfY42J./6Kmw2', NULL, NULL, NULL, 'superadmin', 'superadmin', '2024-11-08 00:11:55', NULL, 'kNknHiwk6X', '2024-11-08 00:11:55', '2024-11-08 00:11:55'),
 ('01jc4ht03xpg7vq9pvj7k9ayc5', '0000000000000000', 'Admin', 'admin@example.com', '00000000000', 'male', NULL, NULL, '', '', NULL, NULL, NULL, '$2y$12$nqAqrUiMb/16SYigiL9gIuIsrfSOeKKtIDn.fETK9qzANnUN0iSn6', NULL, NULL, NULL, 'admin', 'admin', '2024-11-08 00:11:55', NULL, 'LhQXoMZSR3', '2024-11-08 00:11:55', '2024-11-08 00:11:55');
 
