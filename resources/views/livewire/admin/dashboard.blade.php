@@ -11,7 +11,7 @@
       Absensi Hari Ini
     </h3>
     <h3 class="mb-4 text-lg font-semibold leading-tight text-gray-800 dark:text-gray-200">
-      Jumlah Karyawan: {{ $employeesCount }}
+      Jumlah aslab: {{ $employeesCount }}
     </h3>
   </div>
   <div class="mb-4 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4">

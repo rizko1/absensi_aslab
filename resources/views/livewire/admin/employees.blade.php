@@ -1,10 +1,10 @@
 <div>
   <div class="mb-4 flex-col items-center gap-5 sm:flex-row md:flex md:justify-between lg:mr-4">
     <h3 class="mb-4 text-lg font-semibold leading-tight text-gray-800 dark:text-gray-200 md:mb-0">
-      Data Karyawan
+      Data aslab
     </h3>
     <x-button wire:click="showCreating">
-      <x-heroicon-o-plus class="mr-2 h-4 w-4" /> Tambah Karyawan
+      <x-heroicon-o-plus class="mr-2 h-4 w-4" /> Tambah aslab
     </x-button>
   </div>
   <div class="mb-1 text-sm dark:text-white">Filter:</div>
@@ -152,7 +152,7 @@
 
   <x-dialog-modal wire:model="creating">
     <x-slot name="title">
-      Karyawan Baru
+      asisten lab baru  
     </x-slot>
 
     <form wire:submit="create">
@@ -199,7 +199,7 @@
           </div>
         @endif
         <div class="mt-4">
-          <x-label for="name">Nama Karyawan</x-label>
+          <x-label for="name">Nama aslab</x-label>
           <x-input id="name" class="mt-1 block w-full" type="text" wire:model="form.name" />
           @error('form.name')
             <x-input-error for="form.name" class="mt-2" message="{{ $message }}" />
