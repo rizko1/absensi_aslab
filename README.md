@@ -1,8 +1,8 @@
-# Aplikasi Web Absensi Karyawan QR Code GPS
+# Aplikasi Web Absensi aslab QR Code GPS
 
-![Aplikasi Web Absensi Karyawan QR Code GPS](./screenshots/hero.png)
+![Aplikasi Web Absensi aslab QR Code GPS](./screenshots/hero.png)
 
-Aplikasi web absensi karyawan menggunakan QR Code dan GPS.
+Aplikasi web absensi aslab menggunakan QR Code dan GPS.
 
 ## Teknologi yang Digunakan
 
