@@ -1,17 +1,17 @@
 <div>
   <div class="mb-4 flex-col items-center gap-5 sm:flex-row md:flex md:justify-between lg:mr-4">
     <h3 class="mb-4 text-lg font-semibold leading-tight text-gray-800 dark:text-gray-200 md:mb-0">
-      Data Divisi
+      jurusan
     </h3>
     <x-button wire:click="showCreating">
-      <x-heroicon-o-plus class="mr-2 h-4 w-4" /> Tambah Divisi
+      <x-heroicon-o-plus class="mr-2 h-4 w-4" /> Tambah jurusan
     </x-button>
   </div>
   <table class="w-full divide-y divide-gray-200 dark:divide-gray-700">
     <thead class="bg-gray-50 dark:bg-gray-900">
       <tr>
         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300">
-          Divisi
+          jurusan
         </th>
         <th scope="col" class="relative px-6 py-3">
           <span class="sr-only">Actions</span>
@@ -39,7 +39,7 @@
 
   <x-confirmation-modal wire:model="confirmingDeletion">
     <x-slot name="title">
-      Hapus Divisi
+      Hapus jurusan
     </x-slot>
 
     <x-slot name="content">
@@ -59,12 +59,12 @@
 
   <x-dialog-modal wire:model="creating">
     <x-slot name="title">
-      Divisi Baru
+      jurusan Baru
     </x-slot>
 
     <form wire:submit="create">
       <x-slot name="content">
-        <x-label for="name">Nama Divisi</x-label>
+        <x-label for="name">Nama jurusan</x-label>
         <x-input id="name" class="mt-1 block w-full" type="text" wire:model="name" />
         @error('name')
           <x-input-error for="name" class="mt-2" message="{{ $message }}" />
@@ -90,7 +90,7 @@
 
     <form wire:submit.prevent="update">
       <x-slot name="content">
-        <x-label for="name">Nama Divisi</x-label>
+        <x-label for="name">Nama jurusan</x-label>
         <x-input id="name" class="mt-1 block w-full" type="text" wire:model="name" />
         @error('name')
           <x-input-error for="name" class="mt-2" message="{{ $message }}" />
